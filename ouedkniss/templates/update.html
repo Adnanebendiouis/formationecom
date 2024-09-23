@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update/{{client.id}}/" method="post">
+        {% csrf_token %}
+        <input class="border-8"value="{{client.email}}" type="email" name="email" id="email">
+        <input class="border-8"value="{{client.name}}" type="text" name="name" id="name">
+        <input class="border-8"value="{{client.phone_number}}" type="text" name="number" id="number">
+        <input class="bg-orange-300 p-2 hover:drop-shadow-md" type="submit" value="update information">
+    </form>
+</body>
+</html>

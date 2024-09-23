@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>Shopping Cart</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-2xl font-bold mb-5">Shopping Cart</h1>
+        <div class="bg-white shadow-md rounded-lg p-5">
+            <div class="flex justify-between mb-5 border-b pb-2">
+                <div class="flex items-center">
+                    <img src="https://via.placeholder.com/100" alt="Product" class="w-20 h-20 object-cover mr-4">
+                    <div>
+                        <h2 class="font-semibold">Product Name</h2>
+                        <p class="text-gray-500">$20.00</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <input type="number" value="1" min="1" class="border rounded w-20 text-center">
+                    <button class="ml-2 bg-red-500 text-white px-2 rounded">Remove</button>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-5">
+                <span class="font-semibold">Total:</span>
+                <span class="font-bold">$20.00</span>
+            </div>
+            <a href="/confirmOrder/" class="mt-5 bg-blue-500 text-white py-2 px-4 rounded">Proceed to Checkout</a>
+        </div>
+    </div>
+</body>
+</html>
